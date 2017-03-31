@@ -30,7 +30,7 @@ class Quadra_Atos_Model_System_Config_Source_Binary
             if (is_dir($absolutePath)) {
                 $dir = dir($absolutePath);
                 while ($file = $dir->read()) {
-                    if (preg_match("/^request$|^response$/i", $file)) {
+                    if (preg_match("/^request|^response/i", $file)) {
                         $this->_options[] = array('value' => $relativePath . DS . $file, 'label' => $file);
                     }
                 }
