@@ -18,7 +18,7 @@
 <ul class="form-list">
     <li>
         <?php foreach ($this->getCreditCardsAccepted() as $card): ?>
-            <img src="<?php echo Mage::getSkinUrl('images/atos/' . $card . '.gif'); ?>" alt="<?php echo $card ?>" />
+            <img src="<?php echo $this->getSkinUrl('images/atos/' . $card . '.gif'); ?>" alt="<?php echo $card ?>" />
         <?php endforeach; ?>
     </li>
 </ul>
