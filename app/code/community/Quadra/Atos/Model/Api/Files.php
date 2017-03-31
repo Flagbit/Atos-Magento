@@ -40,7 +40,7 @@ class Quadra_Atos_Model_Api_Files
         $content .= '# indiquer:' . "\n";
         $content .= '# ------------------------------------------------------------------------' . "\n";
         $content .= '#' . "\n";
-        $content .= 'D_LOGO!' . Mage::getBaseUrl('media') . 'atos/logo/!' . "\n";
+        $content .= 'D_LOGO!' . Mage::getSkinUrl('images/atos/!') . "\n";
         $content .= '#' . "\n";
         $content .= '# --------------------------------------------------------------------------' . "\n";
         $content .= '#  Fichiers paramètres liés à l\'api sips paiement	' . "\n";

@@ -19,7 +19,7 @@
     <li>
         <div class="atos-logo">
             <?php foreach ($this->getCreditCardsAccepted() as $card): ?>
-                <img src="<?php echo Mage::getBaseUrl('media') . 'atos/logo/' . $card . '.gif' ?>" alt="<?php echo $card ?>" />
+                <img src="<?php echo Mage::getSkinUrl('images/atos/' . $card . '.gif'); ?>" alt="<?php echo $card ?>" />
             <?php endforeach; ?>
         </div>
     </li>
